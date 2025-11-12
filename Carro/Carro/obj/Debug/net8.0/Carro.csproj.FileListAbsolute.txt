@@ -1,0 +1,14 @@
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\bin\Debug\net8.0\Carro.exe
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\bin\Debug\net8.0\Carro.deps.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\bin\Debug\net8.0\Carro.runtimeconfig.json
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\bin\Debug\net8.0\Carro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\bin\Debug\net8.0\Carro.pdb
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.AssemblyInfoInputs.cache
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.AssemblyInfo.cs
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.csproj.CoreCompileInputs.cache
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\refint\Carro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\Carro.genruntimeconfig.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Carro\obj\Debug\net8.0\ref\Carro.dll
