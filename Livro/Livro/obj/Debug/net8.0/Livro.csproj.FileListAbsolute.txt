@@ -1,0 +1,14 @@
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\bin\Debug\net8.0\Livro.exe
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\bin\Debug\net8.0\Livro.deps.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\bin\Debug\net8.0\Livro.runtimeconfig.json
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\bin\Debug\net8.0\Livro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\bin\Debug\net8.0\Livro.pdb
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.AssemblyInfoInputs.cache
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.AssemblyInfo.cs
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.csproj.CoreCompileInputs.cache
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\refint\Livro.dll
+c:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\Livro.genruntimeconfig.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Livro\obj\Debug\net8.0\ref\Livro.dll
