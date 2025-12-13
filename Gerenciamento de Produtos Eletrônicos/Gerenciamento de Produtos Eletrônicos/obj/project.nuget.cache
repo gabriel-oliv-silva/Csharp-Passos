@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ksS2u4jtdVk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ogabr\\Downloads\\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\\Gerenciamento de Produtos Eletrônicos\\Gerenciamento de Produtos Eletrônicos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ogabr\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\ogabr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\ogabr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\ogabr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.18\\microsoft.netcore.app.host.win-x64.8.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

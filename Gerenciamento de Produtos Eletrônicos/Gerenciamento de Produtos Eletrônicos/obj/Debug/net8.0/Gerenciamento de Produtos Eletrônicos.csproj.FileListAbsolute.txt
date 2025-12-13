@@ -1,0 +1,28 @@
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.exe
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.deps.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.runtimeconfig.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.AssemblyInfoInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.AssemblyInfo.cs
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.csproj.CoreCompileInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\refint\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.genruntimeconfig.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\ref\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.exe
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.deps.json
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.runtimeconfig.json
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\bin\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.pdb
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.AssemblyInfoInputs.cache
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.AssemblyInfo.cs
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.csproj.CoreCompileInputs.cache
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\refint\Gerenciamento de Produtos Eletrônicos.dll
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.pdb
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\Gerenciamento de Produtos Eletrônicos.genruntimeconfig.cache
+C:\Users\ogabr\Downloads\Gerenciamento de Produtos Eletrônicos-20251107T012541Z-1-001\Gerenciamento de Produtos Eletrônicos\obj\Debug\net8.0\ref\Gerenciamento de Produtos Eletrônicos.dll
