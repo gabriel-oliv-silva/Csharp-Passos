@@ -1,0 +1,14 @@
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\bin\Debug\net8.0\Concessionária.exe
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\bin\Debug\net8.0\Concessionária.deps.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\bin\Debug\net8.0\Concessionária.runtimeconfig.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\bin\Debug\net8.0\Concessionária.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\bin\Debug\net8.0\Concessionária.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.AssemblyInfoInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.AssemblyInfo.cs
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.csproj.CoreCompileInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\refint\Concessionária.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\Concessionária.genruntimeconfig.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Gabriel\C#\Concessionária\obj\Debug\net8.0\ref\Concessionária.dll
