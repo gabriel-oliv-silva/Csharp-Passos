@@ -1,0 +1,64 @@
+﻿@{
+ViewData["Title"] = "Adicionar alunos";
+}
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<h5 class="h5 text-center">Aqui você adiciona os alunos!</h5>
+<form method="post" class="text-center">
+    <table class="w-100 align-items-center justify-content-center flex-column">
+        <tr>
+            <td>
+                <label for="nome" class="form-label input-group-text">Nome:</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="nome" class="input-group" placeholder="Insira o nome do aluno" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="idade" class="form-label input-group-text">Idade:</label>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="number" id="idade" class="input-group" placeholder="Insira a idade do aluno" required/>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <label for="nota" class="form-label input-group-text">Nota geral:</label>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="number" max="10" min="0" id="nota" class="input-group" placeholder="Insira a nota geral do aluno" required/>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <label for="matricular" class="form-label input-group-text">Número de matrícula:</label>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="number" id="matricula" min="1" class="input-group" placeholder="Insira o número de matrícula do aluno" required/>
+            </td>
+        </tr>
+        <tr>
+
+            <td class="align-items-center justify-content-center" rowspan="2">
+                <input type="submit" class="btn btn-outline-success" value="Enviar" onclick="adcAluno()"/>
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+

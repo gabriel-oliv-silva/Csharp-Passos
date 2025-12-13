@@ -1,0 +1,32 @@
+@{
+ViewData["Title"] = "Deletar aluno";
+}
+
+<h1 class="h1 text-center">Deletar aluno</h1>
+<h5 class="h5 text-center">Insira o nome do aluno:</h5>
+
+<form class="text-center">
+    <table class="w-100 align-items-center justify-content-center flex-column">
+        <tr>
+            <td>
+                <label for="matricula" class="form-label input-group-text">Matrícula:</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" class="input-group" id="matricula" placeholder="Insira o seu número de matrícula" required/>
+            </td>
+        </tr>
+        <tr>
+            <td class="justify-content-center align-items-center">
+                <input type="submit" class="btn btn-outline-success" value="Deletar" onclick="DeletarAluno()"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn btn-outline-danger" value="Deletar todos os alunos" onclick="DeletarTodosAluno()"/>
+            </td>
+        </tr>
+        
+    </table>
+</form>
