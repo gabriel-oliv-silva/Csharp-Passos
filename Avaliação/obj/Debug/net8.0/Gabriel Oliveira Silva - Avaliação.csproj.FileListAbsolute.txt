@@ -1,0 +1,14 @@
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\bin\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.exe
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\bin\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.deps.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\bin\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.runtimeconfig.json
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\bin\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\bin\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.AssemblyInfoInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.AssemblyInfo.cs
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.csproj.CoreCompileInputs.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\refint\Gabriel Oliveira Silva - Avaliação.dll
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.pdb
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\Gabriel Oliveira Silva - Avaliação.genruntimeconfig.cache
+C:\Users\Aluno SENAI.C308-LAB3-001\Documents\Avaliacao\Gabriel Oliveira Silva - Avaliação\obj\Debug\net8.0\ref\Gabriel Oliveira Silva - Avaliação.dll
