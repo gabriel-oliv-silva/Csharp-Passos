@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gabriel Oliveira Silva - Avaliação")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffe4975da2f87e7fe42dfb7f172969596d385779")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gabriel Oliveira Silva - Avaliação")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gabriel Oliveira Silva - Avaliação")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
