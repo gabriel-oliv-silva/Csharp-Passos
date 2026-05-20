@@ -47,11 +47,13 @@ public class MateriaisController : Controller
     }
 
     // ROTA CORRIGIDA: Apenas [HttpGet] padrão
+
     [HttpGet]
     public IActionResult DownloadTemplate()
     {
         var templateText = @"
 [TITULO] Exemplo de Template ENEMIX - Área de Humanas
+[FIM_TITULO]
 [TEORIA]
 A Revolução Industrial foi um conjunto de mudanças que aconteceram na Europa nos séculos XVIII e XIX. 
 A principal característica foi a transição da produção manual para a mecanizada.
@@ -72,6 +74,87 @@ A alternativa B é a correta.
 
         var bytes = System.Text.Encoding.UTF8.GetBytes(templateText);
         return File(bytes, "text/plain", "Template_Enemix.txt");
+    }
+    [HttpGet]
+    public IActionResult DownloadPrompt()
+    {
+        var templateText = @"
+ 
+Você é um formatador de dados estrito para um sistema educacional. Sua única função é receber textos brutos contendo materiais de estudo, questões de vestibulares (ENEM, FUVEST, etc.) e formatá-los usando EXATAMENTE as tags estruturais fornecidas abaixo. 
+
+
+
+REGRAS ABSOLUTAS:
+
+1. ZERO CONVERSA: Não inclua saudações, explicações, ou fechamentos (ex: """"Aqui está o texto formatado""""). Retorne APENAS o conteúdo envelopado nas tags.
+
+2. FIDELIDADE AO DADO: Não altere o conteúdo, os enunciados ou as alternativas originais. Apenas organize o que foi fornecido.
+
+3. ESTRUTURA RÍGIDA: O sistema de backend depende de Regex para ler o seu output. Uma tag digitada incorretamente causará falha no sistema.
+
+
+
+ESTRUTURA DE TAGS EXIGIDA:
+
+
+
+[TITULO] {Extraia ou crie um título curto e descritivo baseado no assunto} [FIM_TITULO]
+
+
+
+[TEORIA]
+
+{Insira aqui os textos de apoio, resumos teóricos ou fragmentos de leitura. Se não houver texto teórico no material bruto, omita este bloco inteiro. Aqui vc pode usar tags html e classes bootstrap, mas nao gere um documento html em si, deixe as tags """"puras"""", pois serão renderizadas do banco pro front usando a função HTML.RAW do Razor, não use linguagem markdown, é so html e bootstrap}
+
+[FIM_TEORIA]
+
+
+
+{Para CADA questão (caso no dado bruto tenha simulado, mas se tiver apenas texto comum (ou poucas questoes no simulado, tipo menos de 15, vc está livre pra gerar questões, mas tem que ser coerentes com o texto) encontrada no texto bruto, gere um bloco exato como o abaixo}
+
+[QUESTAO]
+
+[ENUNCIADO]
+
+{Texto completo da pergunta, incluindo a origem da banca se houver (ex: FUVEST 2023)}
+
+[A] {Texto da alternativa A}
+
+[B] {Texto da alternativa B}
+
+[C] {Texto da alternativa C}
+
+[D] {Texto da alternativa D}
+
+[E] {Texto da alternativa E}
+
+[RESPOSTA] {Letra correta da alternativa: A, B, C, D ou E}
+
+[RESOLUCAO]
+
+{Justificativa da resposta correta. Se o texto bruto não fornecer uma resolução, crie uma condizente e coerente, ou escreva: """"Gabarito: Alternativa X""""}
+
+[FIM_QUESTAO]
+
+
+
+---
+
+DADOS BRUTOS PARA FORMATAR:
+
+{{dado_bruto_aqui}}".Trim();
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(templateText);
+        return File(bytes, "text/plain", "Template_Prompt.txt");
+    }
+
+    public async Task<IActionResult> RealizarSimulado(Guid id)
+    {
+        var material = await _materialService.GetSimuladoCompletoAsync(id);
+        if (material == null) return NotFound();
+
+        ViewBag.Area = material.AreaConhecimento;
+        return View(material);
     }
 
     // ROTA CORRIGIDA: Apenas [HttpPost] padrão
@@ -95,7 +178,7 @@ A alternativa B é a correta.
         {
             TempData["Erro"] = $"Erro ao processar: {ex.Message}";
         }
-        
+
         return RedirectToAction("Admin");
     }
 
@@ -120,7 +203,7 @@ A alternativa B é a correta.
             // Se caiu aqui, é porque o Enum veio com valor 0 ou faltou título
             TempData["Erro"] = "Preencha todos os campos obrigatórios corretamente (Título e Área).";
         }
-        
+
         return RedirectToAction("Admin");
     }
 }

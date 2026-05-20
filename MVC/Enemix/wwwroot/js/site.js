@@ -99,3 +99,42 @@ function abrirModalEstudo(id, titulo, imagem, descricao, areaId) {
     const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
     modalInstance.show();
 }
+
+// Função Global para chamar os Toasts
+function showToast(message, type = 'success') {
+    const container = document.body; // Adiciona direto no body para funcionar em qualquer view
+
+    // Cria o container se não existir
+    if (!document.querySelector('.toast-container-custom')) {
+        const div = document.createElement('div');
+        div.className = 'toast-container-custom';
+        document.body.appendChild(div);
+    }
+
+    const toastContainer = document.querySelector('.toast-container-custom');
+
+    const icons = {
+        success: 'bi-check-circle-fill',
+        danger: 'bi-x-circle-fill',
+        warning: 'bi-trophy-fill'
+    };
+
+    const toastHTML = `
+        <div class="custom-toast ${type}">
+            <i class="bi ${icons[type]} fs-4"></i>
+            <span>${message}</span>
+            <button class="close-toast" onclick="this.parentElement.remove()"><i class="bi bi-x"></i></button>
+            <div class="progress-bar-toast"></div>
+        </div>
+    `;
+
+    toastContainer.insertAdjacentHTML('beforeend', toastHTML);
+
+    // Remove automaticamente após 3 segundos (igual a animação da barrinha)
+    setTimeout(() => {
+        const toasts = toastContainer.querySelectorAll('.custom-toast');
+        if (toasts.length > 0) {
+            toasts[0].remove();
+        }
+    }, 3000);
+}

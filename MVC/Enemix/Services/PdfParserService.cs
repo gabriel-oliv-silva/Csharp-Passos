@@ -16,8 +16,8 @@ public class PdfParserService : IPdfParserService
 
         var material = new MaterialEstudo { AreaConhecimento = area };
 
-        // 2. Extrair Título
-        var tituloMatch = Regex.Match(fullText, @"\[TITULO\](.*?)\n", RegexOptions.Singleline);
+        // 2. Extrair Título com a nova tag de fechamento [FIM_TITULO]
+        var tituloMatch = Regex.Match(fullText, @"\[TITULO\](.*?)\[FIM_TITULO\]", RegexOptions.Singleline);
         material.Titulo = tituloMatch.Success ? tituloMatch.Groups[1].Value.Trim() : "Material Sem Título";
 
         // 3. Extrair Teoria
@@ -26,7 +26,7 @@ public class PdfParserService : IPdfParserService
 
         // 4. Extrair Questões (Loop pois pode haver N questões)
         var questaoMatches = Regex.Matches(fullText, @"\[QUESTAO\](.*?)\[FIM_QUESTAO\]", RegexOptions.Singleline);
-        
+
         foreach (Match match in questaoMatches)
         {
             var block = match.Groups[1].Value;
@@ -55,7 +55,7 @@ public class PdfParserService : IPdfParserService
         }
 
         if (!material.Questoes.Any())
-            throw InvalidOperationException("Nenhuma questão foi encontrada no PDF. Verifique o formato das tags.");
+            throw new InvalidOperationException("Nenhuma questão foi encontrada no PDF. Verifique o formato das tags.");
 
         return material;
     }

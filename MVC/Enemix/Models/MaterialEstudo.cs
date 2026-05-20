@@ -9,7 +9,7 @@ public class MaterialEstudo
     [Key]
     public Guid Id { get; set; } = Guid.NewGuid();
 
-    [Required, MaxLength(200)]
+    [Required]
     public string Titulo { get; set; } = string.Empty;
 
     [Required]

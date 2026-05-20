@@ -22,6 +22,13 @@ public class MaterialRepository : IMaterialRepository
         await _context.MateriaisEstudo.AddAsync(material);
         await _context.SaveChangesAsync();
     }
+    public async Task<MaterialEstudo?> GetByIdWithQuestionsAsync(Guid id)
+    {
+        return await _context.MateriaisEstudo
+            .AsNoTracking()
+            .Include(m => m.Questoes)
+            .FirstOrDefaultAsync(m => m.Id == id);
+    }
 
     public async Task<PagedResult<MaterialEstudo>> GetAllPaginatedAsync(
         AreaConhecimento area, 

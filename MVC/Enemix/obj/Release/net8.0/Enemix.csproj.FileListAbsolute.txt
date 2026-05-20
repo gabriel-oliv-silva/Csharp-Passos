@@ -113,3 +113,4 @@ C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Release\net8.0\refint\Ene
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Release\net8.0\Enemix.pdb
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Release\net8.0\Enemix.genruntimeconfig.cache
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Release\net8.0\ref\Enemix.dll
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Release\net8.0\Enemix.sourcelink.json

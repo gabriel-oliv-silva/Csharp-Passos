@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enemix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cadc3fe9089d333a08ae60555ea74d3b471abec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enemix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enemix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

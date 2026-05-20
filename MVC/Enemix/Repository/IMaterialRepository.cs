@@ -6,7 +6,7 @@ namespace Enemix.Repository;
 public interface IMaterialRepository
 {
     Task AddAsync(MaterialEstudo material);
-    
+    Task<MaterialEstudo?> GetByIdWithQuestionsAsync(Guid id);
     // Atualizado para receber os novos parâmetros de filtro
     Task<PagedResult<MaterialEstudo>> GetAllPaginatedAsync(
         AreaConhecimento area, 

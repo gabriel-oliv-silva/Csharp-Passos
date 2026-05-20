@@ -6,7 +6,7 @@ namespace Enemix.Services;
 public interface IMaterialService
 {
     Task ProcessAndSaveAsync(Stream fileStream, AreaConhecimento area);
-    
+    Task<MaterialEstudo?> GetSimuladoCompletoAsync(Guid id);
     // Assinatura atualizada
     Task<PagedResult<MaterialEstudo>> GetMateriaisPaginadosAsync(
         AreaConhecimento area, 

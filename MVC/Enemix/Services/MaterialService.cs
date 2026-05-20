@@ -20,7 +20,10 @@ public class MaterialService : IMaterialService
         var material = _parser.ParsePdfToMaterial(fileStream, area);
         await _repository.AddAsync(material);
     }
-
+    public async Task<MaterialEstudo?> GetSimuladoCompletoAsync(Guid id)
+    {
+        return await _repository.GetByIdWithQuestionsAsync(id);
+    }
     // Método atualizado repassando os parâmetros para o Repository
     public async Task<PagedResult<MaterialEstudo>> GetMateriaisPaginadosAsync(
         AreaConhecimento area, 

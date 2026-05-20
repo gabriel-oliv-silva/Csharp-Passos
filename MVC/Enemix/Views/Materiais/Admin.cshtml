@@ -42,8 +42,15 @@
                 <div class="col-md-8">
                     <label class="form-label fw-bold">Arquivo PDF Formatado</label>
                     <input type="file" name="file" accept=".pdf" required class="form-control" />
-                    <div class="form-text">
+                    <div class="form-text flex-column d-flex w-100">
+                        <div>
+                            
                         <i class="bi bi-info-circle"></i> Baixe o <a asp-action="DownloadTemplate" asp-controller="Materiais" target="_blank">Modelo Padrão</a> para saber como formatar.
+                        </div>
+                        <strong>OU</strong>
+                        <div>
+                        <i class="bi bi-info-circle"></i> Baixe o <a asp-action="DownloadPrompt" asp-controller="Materiais" target="_blank">Prompt Padrão</a> Caso vc já tenha o dado bruto e queira fazer uma IA formatar.
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">

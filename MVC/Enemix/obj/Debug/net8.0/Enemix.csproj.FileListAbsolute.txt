@@ -113,3 +113,10 @@ C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Debug\net8.0\Enemix.genru
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Debug\net8.0\ref\Enemix.dll
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\web.config
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\Enemix.deps.json
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\Enemix.runtimeconfig.json
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\bin\Debug\net8.0\publish\Enemix.staticwebassets.endpoints.json
+C:\Users\Gabriel\Documents\Languages\C#\MVC\Enemix\obj\Debug\net8.0\Enemix.sourcelink.json

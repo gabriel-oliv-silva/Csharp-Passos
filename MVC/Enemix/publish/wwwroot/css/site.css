@@ -77,6 +77,9 @@
 .carousel-control-prev-icon, .carousel-control-next-icon{
   filter: invert(1) grayscale(100);
 }
+[data-bs-theme="dark"] .bg-light{
+  background: black !important;
+}
 [data-bs-theme="dark"] .carousel-control-prev-icon, [data-bs-theme="dark"] .carousel-control-next-icon{
   filter: none !important;
 }
@@ -104,4 +107,173 @@
 
 ::view-transition-new(root) {
   z-index: 999;
+}
+/* =========================================
+   SIMULADO - ALTERNATIVAS E INTERAÇÃO
+   ========================================= */
+
+.alternativas-item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  background-color: var(--bs-body-bg); /*_compatível com dark mode*/
+  color: var(--bs-body-color);
+}
+
+.alternativas-item:hover {
+  border-color: var(--bs-primary);
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Estados pós-seleção */
+.alternativas-item.selecionada { border-color: var(--bs-secondary); }
+.alternativas-item.correta {
+  border-color: #198754 !important;
+  background-color: rgba(25, 135, 84, 0.1) !important;
+}
+.alternativas-item.errada {
+  border-color: #dc3545 !important;
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  opacity: 0.8;
+}
+
+.letra-badge { width: 40px; text-align: center; }
+
+/* Sidebar de Questões */
+.questao-nav-item {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-size: 1.1rem;
+  border: 2px solid var(--bs-border-color) !important;
+}
+.questao-nav-item.active-questao {
+  background-color: var(--enem-matematica) !important; /* Default fallback, o JS sobrescreve */
+  color: white !important;
+  border-color: transparent !important;
+}
+
+/* Resolução */
+.resolucao-box {
+  animation: fadeInUp 0.4s ease;
+}
+
+
+/* =========================================
+   SISTEMA DE TOASTS CUSTOMIZADO
+   ========================================= */
+.toast-container-custom {
+  position: fixed;
+  top: 80px; /* Abaixo da navbar */
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-toast {
+  min-width: 300px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideInRight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-toast.success { background: linear-gradient(135deg, #198754, #157347); }
+.custom-toast.danger { background: linear-gradient(135deg, #dc3545, #bb2d3b); }
+.custom-toast.warning { background: linear-gradient(135deg, #FFB81C, #e5a50e); color: #000 !important; }
+
+.custom-toast .close-toast {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.custom-toast.warning .close-toast { color: #000; }
+
+.custom-toast .progress-bar-toast {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: rgba(255,255,255,0.4);
+  animation: shrinkBar 3s linear forwards;
+}
+.custom-toast.warning .progress-bar-toast { background: rgba(0,0,0,0.2); }
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+#questoes-nav{
+  overflow: auto;
+  scroll-behavior: smooth;
+  max-height: 100vh;
+  align-self: center;
+  justify-self: center;
+  border: 1.5px solid gray;
+  border-radius: 15px;
+  width: 100%;
+}
+@keyframes shrinkBar {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+/* =========================================
+   DASHBOARD - GRID DE ÁREAS (BENTO STYLE)
+   ========================================= */
+
+.dashboard-grid .dashboard-area-card {
+  position: relative;
+  /* Força o fundo a usar a cor do tema (branco no light, preto/cinza no dark) 
+     em vez da cor sólida da área de conhecimento */
+  background-color: var(--bs-body-bg) !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 1rem !important;
+}
+
+/* Ícone gigante no fundo do card */
+.dashboard-grid .dashboard-watermark {
+  position: absolute;
+  bottom: -25px;
+  right: -15px;
+  font-size: 10rem;
+  opacity: 0.05; /* Transparência extrema para não poluir o texto */
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Efeito no hover: O ícone de fundo dá um "pulso" e fica levemente mais visível */
+.dashboard-grid .card-premium:hover .dashboard-watermark {
+  opacity: 0.1;
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Garante que o título do card acompanhe o modo escuro sem ficar invisível */
+.dashboard-grid .card-title {
+  color: var(--bs-body-color) !important;
+  font-size: 1.5rem;
+}
+
+/* Ajuste fino de borda arredondada no hover para não desalinhar */
+.dashboard-grid .card-premium:hover {
+  border-radius: 1rem !important;
 }
