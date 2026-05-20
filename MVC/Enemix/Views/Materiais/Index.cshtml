@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Dashboard ENEM";
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5 fade-in-up">
+        <h1 class="display-4 fw-bold">Bem-vindo ao <span class="text-warning">Enemix</span></h1>
+        <p class="lead text-muted">Escolha sua área de conhecimento e comece a dominar o ENEM.</p>
+    </div>
+
+    <!-- Carrossel de Áreas -->
+    <div id="carouselAreas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @{ int index = 0; }
+            @foreach (var area in Enum.GetValues(typeof(AreaConhecimento)).Cast<AreaConhecimento>())
+            {
+                var areaStr = area.ToString();
+                var icones = new Dictionary<AreaConhecimento, string> {
+                    { AreaConhecimento.Linguagens, "bi-chat-quote-fill" },
+                    { AreaConhecimento.Humanas, "bi-globe-americas" },
+                    { AreaConhecimento.Natureza, "bi-droplet-half" },
+                    { AreaConhecimento.Matematica, "bi-calculator-fill" }
+                };
+
+                <div class="carousel-item @(index == 0 ? "active" : "")">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <a href="@Url.Action("EscolhaModo", new { area = (int)area })" class="text-decoration-none">
+                                <div class="card card-premium border-4 theme-@areaStr.ToLower()">
+                                    <div class="card-body text-center p-5 bg-@areaStr.ToLower() text-white">
+                                        <i class="bi @icones[area] display-1 mb-3"></i>
+                                        <h2 class="fw-bold card-title">@areaStr</h2>
+                                        <p class="card-text mb-0 opacity-75">Clique para explorar conteúdos e simulados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                index++;
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAreas" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>

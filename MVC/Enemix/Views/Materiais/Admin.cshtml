@@ -1,0 +1,95 @@
+@{
+    ViewData["Title"] = "Painel Administrativo";
+}
+
+<div class="container py-5">
+    <h2 class="fw-bold mb-4"><i class="bi bi-shield-lock-fill text-danger"></i> Painel Admin</h2>
+
+    <!-- ALERTAS DE SUCESSO E ERRO -->
+    @if (ViewBag.Sucesso != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @ViewBag.Sucesso
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (ViewBag.Erro != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> @ViewBag.Erro
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-pdf" data-bs-toggle="tab" data-bs-target="#aba-pdf" type="button" role="tab">
+                <i class="bi bi-file-earmark-pdf-fill text-danger"></i> Upload PDF (Simulado)
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-topico" data-bs-toggle="tab" data-bs-target="#aba-topico" type="button" role="tab">
+                <i class="bi bi-plus-circle-fill text-success"></i> Cadastrar Pílula Teórica
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content p-4 border border-top-0 rounded-bottom" id="adminTabsContent">
+        
+        <!-- Aba 1: Upload PDF -->
+        <div class="tab-pane fade show active" id="aba-pdf" role="tabpanel">
+            <form asp-action="UploadPdf" asp-controller="Materiais" method="post" enctype="multipart/form-data" class="row g-3">
+                <div class="col-md-8">
+                    <label class="form-label fw-bold">Arquivo PDF Formatado</label>
+                    <input type="file" name="file" accept=".pdf" required class="form-control" />
+                    <div class="form-text">
+                        <i class="bi bi-info-circle"></i> Baixe o <a asp-action="DownloadTemplate" asp-controller="Materiais" target="_blank">Modelo Padrão</a> para saber como formatar.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Área de Conhecimento</label>
+                    <select name="area" class="form-select" required asp-items="Html.GetEnumSelectList<AreaConhecimento>()"></select>
+                </div>
+                <div class="col-md-1 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                        <i class="bi bi-cloud-upload-fill"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Aba 2: Cadastrar Tópico -->
+        <div class="tab-pane fade" id="aba-topico" role="tabpanel">
+            <form asp-action="CadastrarTopico" asp-controller="Materiais" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Título da Pílula</label>
+                    <input type="text" name="Titulo" required class="form-control" placeholder="Ex: Interpretação de Texto" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Área de Conhecimento</label>
+                    <!-- Adicionado option value="" para evitar que envie 0 (zero) e quebre o Enum -->
+                    <select name="AreaConhecimento" required class="form-select">
+                        <option value="">Selecione...</option>
+                        @foreach (AreaConhecimento area in Enum.GetValues(typeof(AreaConhecimento)))
+                        {
+                            <option value="@area">@area</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">URL da Imagem de Capa</label>
+                    <input type="url" name="ImagemUrl" class="form-control" placeholder="https://..." />
+                </div>
+                <div class="col-12">
+                    <label class="form-label fw-bold">Descrição / Conteúdo (Aceita HTML)</label>
+                    <textarea name="DescricaoHtml" rows="10" class="form-control font-monospace" placeholder="<h3>Introdução</h3><p>Texto aqui...</p>"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="bi bi-save-fill"></i> Salvar Pílula
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
